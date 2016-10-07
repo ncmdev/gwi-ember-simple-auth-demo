@@ -1,4 +1,6 @@
-# Gwi-login-example
+# gwi-ember-simple-auth-demo
+
+Add your api key to `config/environment.js` and follow the installation instructions below.
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
