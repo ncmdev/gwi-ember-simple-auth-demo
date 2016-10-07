@@ -1,0 +1,9 @@
+Application
+
+{{outlet}}
+
+{{#if session.isAuthenticated}}
+  <button type="button" name="button" {{action 'logout'}}>Sign Out</button>
+{{else}}
+  {{link-to 'Login' 'login'}}
+{{/if}}

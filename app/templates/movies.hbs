@@ -1,0 +1,17 @@
+<img src="{{model.poster_url}}" alt="{{model.title}} ({{model.year}})" />
+
+You're watching {{model.title}} ({{model.year}})
+
+{{link-to "Next Movie" 'movies' nextId}}
+
+{{#if session.isAuthenticated}}
+  {{#if model.in_queue}}
+    <button type="button" name="button" style="background-color: green; color: white;">IN QUEUE</button>
+  {{else}}
+    <button type="button" name="button" style="background-color: red">Add To Queue</button>
+  {{/if}}
+{{else}}
+  <p>
+    You're not logged in.
+  </p>
+{{/if}}

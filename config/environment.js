@@ -42,5 +42,7 @@ module.exports = function(environment) {
 
   }
 
+  ENV.apiKey = 'API_KEY_GOES_HERE';
+
   return ENV;
 };
